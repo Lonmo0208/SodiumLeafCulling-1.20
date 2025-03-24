@@ -1,8 +1,8 @@
 package toni.sodiumleafculling.mixins;
 
 
-import net.caffeinemc.mods.sodium.client.render.frapi.render.AbstractBlockRenderContext;
-import net.caffeinemc.mods.sodium.client.world.LevelSlice;
+import me.jellysquid.mods.sodium.client.render.frapi.render.AbstractBlockRenderContext;
+import me.jellysquid.mods.sodium.client.world.LevelSlice;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;

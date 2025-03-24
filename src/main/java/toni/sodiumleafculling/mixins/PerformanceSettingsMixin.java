@@ -1,6 +1,6 @@
 package toni.sodiumleafculling.mixins;
 
-import net.caffeinemc.mods.sodium.client.gui.SodiumGameOptions;
+import me.jellysquid.mods.sodium.client.gui.SodiumGameOptions;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import toni.sodiumleafculling.LeafCullingQuality;

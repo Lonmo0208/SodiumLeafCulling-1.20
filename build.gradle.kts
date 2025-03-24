@@ -7,7 +7,7 @@ val settings = object : TxniTemplateSettings {
 		}
 
 		override fun addFabric(deps: DependencyHandlerScope) {
-			deps.modImplementation(modrinth("sodium", "mc1.21-0.6.0-beta.1-fabric"))
+			deps.modImplementation(files("D:/Github/SodiumLeafCulling-1.20/custom_sodium/sodium-fabric-0.6.0.jar"))
 		}
 
 		override fun addForge(deps: DependencyHandlerScope) {
@@ -16,6 +16,7 @@ val settings = object : TxniTemplateSettings {
 
 		override fun addNeo(deps: DependencyHandlerScope) {
 			deps.implementation(modrinth("sodium", "mc1.21-0.6.0-beta.1-neoforge"))
+
 
 			deps.compileOnly("org.sinytra.forgified-fabric-api:fabric-api-base:0.4.42+d1308dedd1")
 			deps.compileOnly("org.sinytra.forgified-fabric-api:fabric-renderer-api-v1:3.4.0+acb05a39d1")
@@ -106,6 +107,7 @@ repositories {
 	maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
 	maven("https://maven.parchmentmc.org")
 	maven("https://maven.su5ed.dev/releases")
+	maven ("https://repo.spongepowered.org/maven")
 }
 
 dependencies {

@@ -1,6 +1,6 @@
 package toni.sodiumleafculling;
 
-import net.caffeinemc.mods.sodium.client.SodiumClientMod;
+import me.jellysquid.mods.sodium.client.SodiumClientMod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;

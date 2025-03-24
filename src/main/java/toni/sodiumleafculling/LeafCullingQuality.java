@@ -1,6 +1,6 @@
 package toni.sodiumleafculling;
 
-import net.caffeinemc.mods.sodium.client.gui.options.TextProvider;
+import me.jellysquid.mods.sodium.client.gui.options.TextProvider;
 import net.minecraft.network.chat.Component;
 
 public enum LeafCullingQuality implements TextProvider {

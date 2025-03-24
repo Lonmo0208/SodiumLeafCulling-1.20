@@ -19,7 +19,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
-		"minecraft": "${mc}",
+		"minecraft": "1.20.1",
 		"fabric-api": "*"
 	},
 	"accessWidener": "${id}.accesswidener"

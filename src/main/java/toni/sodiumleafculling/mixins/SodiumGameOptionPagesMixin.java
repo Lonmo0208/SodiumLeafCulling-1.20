@@ -1,9 +1,9 @@
 package toni.sodiumleafculling.mixins;
 
-import net.caffeinemc.mods.sodium.client.gui.SodiumGameOptionPages;
-import net.caffeinemc.mods.sodium.client.gui.options.*;
-import net.caffeinemc.mods.sodium.client.gui.options.control.CyclingControl;
-import net.caffeinemc.mods.sodium.client.gui.options.storage.SodiumOptionsStorage;
+import me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages;
+import me.jellysquid.mods.sodium.client.gui.options.*;
+import me.jellysquid.mods.sodium.client.gui.options.control.CyclingControl;
+import me.jellysquid.mods.sodium.client.gui.options.storage.SodiumOptionsStorage;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -21,7 +21,7 @@ public class SodiumGameOptionPagesMixin {
     @Unique
     private static final SodiumOptionsStorage leafcullingOpts = new SodiumOptionsStorage();
 
-    @Inject(method = "performance", at = @At(value = "INVOKE", target = "Lnet/caffeinemc/mods/sodium/client/services/PlatformRuntimeInformation;isDevelopmentEnvironment()Z"), locals = LocalCapture.CAPTURE_FAILHARD)
+    @Inject(method = "performance", at = @At(value = "INVOKE", target = "Lme/jellysquid/mods/sodium/client/gui/options/OptionGroup;createBuilder()Lme/jellysquid/mods/sodium/client/gui/options/OptionGroup$Builder;"), locals = LocalCapture.CAPTURE_FAILHARD)
     private static void inject$leafcullingoption(CallbackInfoReturnable<OptionPage> cir, List<OptionGroup> groups) {
         groups.add(OptionGroup.createBuilder()
             .add(OptionImpl.createBuilder(LeafCullingQuality.class, leafcullingOpts)
